@@ -1,0 +1,89 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Yellow);
+    font-size: 15px;
+}
+main{
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    background-color: var(--White);
+    width: 320px;
+    padding: 1rem;
+    border: 1px solid var(--Gray-950);
+    border-radius: 16px;
+    gap: 20px;
+    font-weight: 700;
+    box-shadow: 5px 5px 0px 0px var(--Gray-950);
+}
+.ret{
+    color: var(--Gray-500);
+}
+main, img{
+    border-radius: 16px;
+}
+h2:hover{
+    color: var(--Yellow);
+}
+h2, p{
+    text-align: left;
+}
+span{
+    text-align: left;
+    background-color: var(--Yellow);
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7px;
+    display: block;
+    width: fit-content;
+    align-self: flex-start;
+}
+.aria{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.aria p{
+    margin-top: 15px;
+}
+.aria img{
+    height: 50px;
+    width: 50px;
+}
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+    margin-top: 30px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    main{
+        width: 200px;
+    }
+}
