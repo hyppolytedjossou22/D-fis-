@@ -1,0 +1,199 @@
+:root{
+    --Black:  hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+    --Green-500: hsl(158, 36%, 37%);
+    --Gree-700: hsl(158, 42%, 18%);
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+    text-align: center; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: var(--Cream);
+    font-size: 15px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    border-radius: 16px;
+    overflow: hidden;            /* Pour arrondit les coins de l'image */
+    background-color: transparent;
+}
+
+img{
+    height: 450px;
+    width: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.product{
+    width: 300px;                /* Pour avoir les même largeur que l'image */
+    padding: 2rem;
+    text-align: left;
+    background-color: var(--White);  /* Pour avoir un fond blanc seulement au côté du texte */
+}
+
+.product1{
+    padding-top: 0px;
+    color: var(--Grey);
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    font-family: "Fraunces", serif;
+}
+
+p, button{
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+button{
+    background-color: var(--White);
+    color:  var(--Gree-700);
+    padding: 0px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: var(--Gree-700);
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    &:active{
+        background-color: var(--Gree-700);
+        color: var(--White);
+    }
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.product2{
+    font-size: 35px ;
+    font-style: var(--Black) ;
+    color: var(--Green-500);
+    font-family: "Fraunces", serif;
+}
+
+.product3{
+    margin-top: 12px;
+    text-decoration:line-through;
+    color: var(--Grey);
+}
+
+.color{
+    color: var(--Grey);
+    font-family: "Montserrat", sans-serif;
+}
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.attribution {
+    font-size: 0.6875rem; 
+    text-align: center; 
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%); 
+} 
+
+@media (max-width: 600px) {
+  body {
+    padding: 24px;
+  }
+
+  main {
+    flex-direction: column;
+    width: 100%;
+    max-width: 327px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  main img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .product {
+    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .product1 {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 1.1;
+    margin: 16px 0;
+  }
+
+  .color {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Les <br> forcent des retours à la ligne pensés pour desktop */
+  .product br,
+  h1 br {
+    display: none;
+  }
+
+  .products {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .product2 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .product3 {
+    font-size: 13px;
+    margin: 0;
+    text-decoration: line-through;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .attribution {
+    margin-top: 24px;
+  }
+}
