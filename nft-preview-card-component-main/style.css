@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Blue-500: hsl(215, 51%, 70%);
+    --Cyan-400: hsl(178, 100%, 50%);
+    --Blue-950 : hsl(217, 54%, 11%);
+    --Blue-900 : hsl(216, 50%, 16%);
+    --Blue-800 : hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Blue-800);
+    font-size: 15px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+    align-items: center;
+    background-color: var(--Blue-900);
+    width: 300px;
+    padding: 1rem;
+    border-radius: 16px;
+    gap: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 50px;
+    box-shadow: 0px 10px 10px 10px var(--Blue-950);
+}
+
+.tab1 img{
+    object-fit: cover;
+    object-fit: center;
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+}
+.tab1 h2, .tab1 p{
+    margin-top: 20px;
+}
+.tab1 h2{
+    color: var(--White);
+}
+.tab1 p{
+    font-weight: 100;
+    color: var(--Blue-500);
+    font-size: 18px;
+}
+.tab2 {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+.tab2 .element1{
+    color: var(--Cyan-400);
+    margin-bottom: 0px;
+}
+.tab2 .element2{
+    color: var(--Blue-500);
+    margin-bottom: 0px;
+}
+.tab3{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border-top: 1px solid var(--Blue-500);
+    padding-top: 15px;
+    margin-top: 10px;
+    text-align: left;
+    margin-right: 30px;
+}
+.tab3 img{
+    height: 35px;
+    width: 35px;
+    border: 2px solid var(--White);
+    border-radius: 20px;
+    text-align: left;
+}
+.tab3 p{
+    margin-top:10px;
+}
+.tab3 .element1{
+    color: var(--Blue-500);
+}
+.tab3 .element2{
+    color: var(--White);
+}
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center;
+    margin-top: 50px; 
+    margin-bottom: 20px;
+    color: var(--White);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+@media (max-width: 700px) {
+    main{
+        width: 250px;
+    }
+    .tab2{
+        display: flex;
+        flex-direction: row;
+        gap: 20px
+    }
+}
