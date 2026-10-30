@@ -83,7 +83,7 @@ body::after {
   color: var(--White);
   padding: 2.2rem 2.4rem 2.4rem;
   text-align: center;
-  border-radius: 28px 0 0 28px;
+  border-radius: 28px 28px 28px 28px;
 }
 
 .result-label {
