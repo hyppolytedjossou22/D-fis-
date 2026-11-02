@@ -1,0 +1,168 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face{
+    font-family: 'MaPolice';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Police';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+body{
+    text-align: left;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Stone-100);
+    font-size: 15px;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    background-color: var(--White);
+    width: 600px;
+    padding: 1rem;
+    border-radius: 16px;
+    gap: 20px;
+    font-family: 'MaPolice', sans-serif;
+    color: var(--Stone-600);
+}
+img{
+    border-radius: 10px;
+    height: 200px;
+    width: 600px;
+}
+.tab1 h1{
+    color: var(--Stone-900);
+    font-family: 'Police', sans-serif;
+}
+.tab1 p{
+    color: var(--Stone-900);
+    font-family: 'MaPolice', sans-serif;
+    color: var(--Stone-600);
+}
+.tab1 ul{
+    background-color: var(--Stone-100);
+    padding-bottom: 10px;
+    padding-top: 7px;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    margin-bottom: 0%;
+}
+b{
+    color: var(--Stone-900);
+}
+li::marker{
+    color: var(--Rose-800);
+}
+.tab1 li{
+    margin-left: 20px;
+}
+.tab1 ul p{
+    color: var(--Rose-800);
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0%;
+}
+
+.tab2 .element1 ul{
+    border-bottom: 1px solid var(--Stone-900);
+    padding-bottom: 17px;
+}
+.tab2 .element2 b, .tab1 ul b{
+    color: var(-);
+}
+.tab2 p{
+    color: var(--Brown-800);
+    text-align: left;
+    font-weight: 600;
+}
+.tab2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 30px;
+    margin-top: 0%;
+}
+.tab2 p{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Police', sans-serif;
+    font-weight: 550;
+}
+.element1 li{
+    margin-left: 20px;
+}
+.element2 li{
+    margin-left: 20px;
+}
+.tableau{
+    border-bottom: 0.4px solid black;    
+}
+.tableauBord, .tableau{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+.tab3 .element1{
+    margin-left: 20px;
+}
+.tab3 .element2{
+    margin-left: 10px;
+}
+.tab3 .element3{
+    margin-left: 35px;
+}
+.tab3 .element1, .tab3 .element2, .tab3 .element3, .element{
+    color: var(--Brown-800);
+    font-weight: 700;
+    font-family: 'MaPolice', sans-serif;
+}
+.tab3 h2{
+    color: var(--Brown-800);
+    font-weight: 550;
+    font-size: 30px;
+    font-family: 'Police', sans-serif;
+}
+.put{
+    margin-left: 50px;
+    font-family: 'MaPolice', sans-serif;
+}
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+    margin-top: 50px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+@media (max-width: 375px){
+    main{
+        width: 250px;
+        text-align: left;
+    }
+    img{
+        width: 250px;
+    }
+    .tableau, .tableauBord{
+        gap: 50px;
+    }
+}
