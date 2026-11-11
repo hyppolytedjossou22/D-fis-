@@ -40,6 +40,7 @@ main{
     gap: 20px;
     font-family: 'MaPolice', sans-serif;
     color: var(--Stone-600);
+    margin-top: 50px;
 }
 img{
     border-radius: 10px;
